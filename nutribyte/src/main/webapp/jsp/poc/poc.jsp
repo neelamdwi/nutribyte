@@ -11,8 +11,7 @@
 <body>
 	<jsp:include page="/jsp/header.jsp"></jsp:include>
 	<div style="text-align: center; vertical-align: middle;">
-	<h2> There are <%= USDADao.productMap.size() %> products in the data base</h2>
-	<h2> There are <%= USDADao.nutrientMap.size() %> nutrients in the data base</h2>
+	<h2> There are <%= USDADao.productMap.size() %> products and <%= USDADao.nutrientMap.size() %> nutrients in the data base</h2>
 	</div>
 </body>
 </html>
