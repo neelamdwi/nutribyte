@@ -8,8 +8,8 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
-/**Dao is Red30's Data Access Object class to connect with
- * Red30DB through the data source defined in tomcat's context.xml.
+/**Dao is NutriByte's Data Access Object class to connect with
+ * NutriByteDB through the data source defined in tomcat's context.xml.
  * It uses Singleton pattern to ensure single instance. 
  */
 public class Dao {
