@@ -14,7 +14,7 @@
 				<td align="right" valign="bottom">
 					<div id="menu">
 						<ul>
-							<li><a href=poc>POC</a></li>
+						<!-- 	<li><a href=poc>POC</a></li> -->
 							<li><a href="index.jsp">home</a></li>
 							<li><a href=search>search products</a></li>
 							<li><a href=compare>compare products</a></li>
