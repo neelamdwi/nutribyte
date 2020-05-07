@@ -33,8 +33,10 @@ public class USDADao{
 	public static List<Nutrient> searchNutrientsForProduct(String fdc_id) {
 		List<Nutrient> nutrientsList = new ArrayList<>();
 		Product product = productMap.get(fdc_id);
-		for (String nutrientId: product.getProductNutrientMap().keySet()) {
-			nutrientsList.add(nutrientMap.get(nutrientId));
+		if (product != null) {
+			for (String nutrientId: product.getProductNutrientMap().keySet()) {
+				nutrientsList.add(nutrientMap.get(nutrientId));
+			}
 		}
 		return nutrientsList;
 	}
