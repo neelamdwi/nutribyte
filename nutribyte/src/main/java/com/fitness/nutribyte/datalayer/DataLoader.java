@@ -64,6 +64,7 @@ public class DataLoader extends HttpServlet{
 				Product product = new Product(rs.getString(1), rs.getString(2));
 				USDADao.productMap.put(rs.getString(1), product);
 			}
+			rs.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -82,6 +83,7 @@ public class DataLoader extends HttpServlet{
 					USDADao.productMap.put(rs.getString(1), product);
 				}
 			}
+			rs.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -101,6 +103,8 @@ public class DataLoader extends HttpServlet{
 				Nutrient nutrient = new  Nutrient(rs.getString(1), rs.getString(2), rs.getString(3));
 				USDADao.nutrientMap.put(rs.getString(1), nutrient);
 			} 
+			rs.close();
+			ps.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -133,6 +137,8 @@ public class DataLoader extends HttpServlet{
 			while (rs.next()) {
 				itemList.add(new TempItem(rs.getInt(1), rs.getInt(2), rs.getFloat(3)));
 			}
+			rs.close();
+			ps.close();
 		}  catch (SQLException e) {
 			e.printStackTrace();
 		}
